@@ -78,6 +78,7 @@ loader.load("medieval_fantasy_book/scene.gltf", function(gltf) {
   if (flower) {
     const clone = flower.clone();
     clone.position.copy(reticle.position);
+    clone.scale.set(0.1, 0.1, 0.1);
     scene.add(clone);
   }
 });
